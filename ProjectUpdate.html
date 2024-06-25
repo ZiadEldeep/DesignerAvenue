@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Project Update | Home & Co</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatiable" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styleaddition.css">
+        <link rel="stylesheet" href="styleHome.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+        <script>
+            function redirectToDesignerHP() {
+                window.location.href = 'designerHome.html';
+                return false;
+            }
+        </script>
+    </head>
+    
+    <body>
+        
+        
+        <div class="main">
+            <header> 
+                <div class="navbar"> 
+                    <div class="icon"> 
+                        <a href="index.html"> 
+                            <img class="logo" src="img/logo.png" alt="DecorDirect Logo"> 
+                        </a> 
+                    </div> 
+                </div> 
+            </header>
+
+            <main class="AdditionUpdate"> 
+                <h2>Update a Project</h2><br>
+                <form action="/submit_project" method="post" onsubmit="return redirectToDesignerHP();">
+        
+                <label for="projectName">Project Name:</label>
+                <input type="text" id="projectName" name="projectName" placeholder=" Home Studio"> <br><br>
+        
+                <label for="projectImage">Upload Image:</label><br>
+                <img id="preview" src="img/minimalist-office.jpg" alt="Default Image" style="max-width: 200px; max-height: 200px;"><br><br>
+        
+
+                <label for="designCategory">Design Category:</label>
+                <select id="designCategory" name="designCategory">
+                    <option value="Modren">Modren</option>
+                    <option value="web">Web Design</option>
+                    <option value="graphic">Graphic Design</option>
+                    <option value="ui">UI/UX Design</option>
+                    <option value="other">Other</option>
+                </select> <br><br>
+
+
+                <label for="projectDescription">Project Description:</label><br>
+                <textarea id="projectDescription" name="projectDescription" rows="4" cols="50" placeholder=" Minimalist biege and black home studio"></textarea><br><br>
+
+        
+                <input type="submit" value="Update Project">
+                
+            </form>
+            </main>
+        
+
+            <footer>
+                <div class="footer-content">
+        
+                    <h3 id="footer-header">Contact us</h3>
+        
+                    <ul class="socials">
+                        <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fa fa-linkedin-square"></i></a></li>
+                    </ul>
+        
+                    <div class=”footer-bottom”>
+                        <p>copyright &copy; 2024 - Home & Co </p>
+                    </div>
+        
+                </div>
+            </footer>
+
+    </div>
+        </body>
+</html>

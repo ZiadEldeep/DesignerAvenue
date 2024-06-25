@@ -1,0 +1,76 @@
+
+.user-type {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    align-items: center;
+    gap: 10px; /* Adjust the space between the items as needed */
+}
+
+/* Login Container Styles - Enhanced for Appeal */
+.login-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px; /* Slightly increased for better aesthetics */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2); /* Increased shadow for depth */
+    width: 100%;
+    max-width: 400px; /* Adjusted width */
+    margin: 5% auto; /* Centered vertically and horizontally */
+    text-align: center;
+    border: 1px solid #ddd; /* Subtle border */
+}
+
+.login-container h2 {
+    margin-bottom: 30px;
+    color: #30394e; /* To match the theme */
+    font-size: 28px; /* Adjusted for better visibility */
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="submit"],
+input[type="radio"] {
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px; /* Slightly rounded for a modern look */
+    font-size: 16px; /* Larger font for readability */
+}
+
+input[type="submit"] {
+    background-color: #30394e;
+    color: white;
+    cursor: pointer;
+    font-weight: 600; /* Bolder for prominence */
+}
+
+input[type="submit"]:hover {
+    background-color: #575e7a; /* Slightly lighter on hover */
+}
+
+label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    display: block; /* Ensuring labels appear above inputs */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .menu ul li {
+        padding: 5px 0;
+    }
+
+    .login-container {
+        margin: 10px auto;
+    }
+}

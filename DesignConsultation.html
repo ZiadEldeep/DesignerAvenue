@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Consultation</title>
+    <link rel="stylesheet" href="styleconult.css">
+    <link rel="stylesheet" href="styleHome.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="main">
+
+        <header> 
+            <div class="navbar"> 
+                <div class="icon"> 
+                    <a href="index.html"> 
+                        <img class="logo" src="img/logo.png" alt="DecorDirect Logo"> 
+                    </a> 
+                </div> 
+            </div> 
+        </header>
+        <div class="container">
+            <h2 id="titl">Design Consultation</h2> <br>
+
+            <p>Client Name: Sarah Ahmed</p> <br>
+            <p>Room Type: Living Room</p> <br>
+            <p>Design Category: Modern</p> <br>
+            <p>Dimension: 4x5m</p> <br>
+            <p>Color Preferences: Beige</p> <br>
+            <p>Date: 9/2/2020</p> <br>
+
+            <!-- Design consultation form -->
+            <div class="consultationText">
+                <strong>Consultation:</strong> <br>
+                <textarea id="consultationText" name="consultationText" rows="6" cols="50" required></textarea> <br>
+            </div>
+            <!-- Image upload section -->
+            <div>
+                <label for="designImage">Upload Design Image:</label>
+                <input type="file" id="designImage" name="designImage" accept="image/*">
+            </div>
+
+            <button type="button" onclick="submitForm()">Submit</button>
+        </div>
+
+        <script>
+            function submitForm() {
+                
+                const currentDate = new Date();
+                
+
+                const formData = {
+                    clientName: "Sarah Ahmed",
+                    roomType: "Living Room",
+                    designCategory: "Modern",
+                    dimension: "4x5m",
+                    colorPreferences: "Beige",
+                    consultationDate: "9/2/2020",
+                    consultationText: document.getElementById('consultationText').value,
+                };
+
+               
+
+                alert('Thank you! Form submitted successfully.');
+
+                // Clear the form
+                document.getElementById('consultationForm').reset();
+            }
+        </script>
+          <footer>
+            <div class="footer-content">
+    
+                <h3 id="footer-header">Contact us</h3>
+    
+                <ul class="socials">
+                    <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fa fa-linkedin-square"></i></a></li>
+                </ul>
+    
+                <div class=”footer-bottom”>
+                    <p>copyright &copy; 2024 - Home & Co </p>
+                </div>
+    
+            </div>
+        </footer>
+    </body>
+
+</html>

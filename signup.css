@@ -1,0 +1,83 @@
+.wrapper .btn{
+    width:100%;
+    height:45px;
+    background:#fff;
+    border:none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #4b4b4b;
+    font-weight:600;
+}
+
+.wrapper .register-link{
+    font-size: 14.5px;
+    text-align: center;
+    margin:20px 0 15px;
+}
+
+.register-link p a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover{
+    text-decoration: underline;
+}
+ 
+/* Start of new styles for the signup form */
+.signup-container {
+   
+    max-width: 500px;
+    margin: 2rem auto; /* This adds space above and below the signup box */
+    padding: 20px;
+    background-color: #fff; /* Adjust the background as needed */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.user-form {
+    margin-top: 20px;
+}
+
+.user-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-form input[type="text"],
+.user-form input[type="email"],
+.user-form input[type="password"],
+.user-form input[type="submit"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.user-form input[type="submit"] {
+    background-color: #30394e;
+    color: white;
+    cursor: pointer;
+}
+
+.user-form input[type="submit"]:hover {
+    background-color: #575e7a;
+}
+
+.user-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.user-form input[type="file"] {
+    border: none;
+}
+
+.user-form div {
+    margin-bottom: 10px;
+}
+
